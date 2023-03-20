@@ -1,0 +1,251 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body {
+  background-color: rgb(241, 229, 168);
+}
+
+.contenido-header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../src/img/índice.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.contenido-header .texto {
+  height: 100vh;
+  font-size: 90px;
+  font-family: 'Noto Serif', serif;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #835835;
+}
+
+.menu {
+  background-color: #c08e65;
+  width: 100%;
+  padding: 5px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.menu a {
+  padding: 10px 30px;
+  font-size: 40px;
+  background-color: #c08e65;
+  margin: 0 10px;
+  transition: 0.5s ease all;
+  color: #eaeaea;
+  text-decoration: none;
+}
+.menu a:hover {
+  color: #835835;
+}
+.container {
+  max-width: 1800px;
+  margin: auto;
+}
+
+.products .container {
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+.products h1 {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 35px;
+  color: #835835;
+}
+h2 {
+  color: #835835;
+}
+.products .cartas {
+  height: 750px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #835835;
+  box-shadow: 0 0 20px #835835;
+  width: 30%;
+  gap: 20px;
+  padding-top: 30px;
+  font-size: 22px;
+}
+.products img {
+  height: 300px;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 25px;
+  background-color: #835835;
+  border: 1 solid black;
+  margin: 20px;
+  width: 30%;
+}
+button:hover {
+  transform: scale(1.1);
+  background-color: #c08e65;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 90vh;
+  background-image: url(../src/img/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.banner h1 {
+  color: rgb(241, 229, 168);
+  font-size: 60px;
+}
+
+.types .container {
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0 20px;
+}
+.types h1 {
+  color: #835835;
+  text-align: center;
+  margin: 20px 0;
+  font-size: 35px;
+}
+.types .cartas {
+  height: 570px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: 1px solid #835835;
+  box-shadow: 0 0 20px #835835;
+  width: 30%;
+  gap: 20px;
+  padding: 30px 20px 0 20px;
+}
+.types img {
+  height: 300px;
+}
+
+.redes-sociales {
+  border-top: 1px solid gold;
+  margin-top: 50px;
+  padding: 30px;
+  background-color: #f3a7ba;
+  display: flex;
+  justify-content: center;
+}
+
+.redes-sociales img {
+  padding: 5px;
+  border-radius: 100%;
+  width: 70px;
+}
+
+.redes-sociales img:hover {
+  transform: scale(1.2);
+}
+
+.derechos {
+  background-color: rgb(241, 229, 168);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: #835835;
+  font-size: 20px;
+}
+
+/* Tablets - moviles */
+@media screen and (max-width: 810px) {
+  .contenido-header .texto {
+    font-size: 60px;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+  }
+  .menu a {
+    font-size: 30px;
+  }
+  .products .container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  .products h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 35px;
+  }
+  .products .cartas {
+    height: 770px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    width: 80%;
+    gap: 30px;
+    font-size: 22px;
+    padding: 0px 20px;
+  }
+  .products img {
+    height: 300px;
+  }
+
+  .types .container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  .types h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 35px;
+  }
+  .types .cartas {
+    height: 720px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    width: 80%;
+    gap: 30px;
+    /*   padding-top: 30px; */
+    font-size: 22px;
+    padding: 0px 20px;
+  }
+  .products img {
+    height: 290px;
+  }
+}
